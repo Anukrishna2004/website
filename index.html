@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egg Boil Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1><i>egiee tymee...</i></h1>
+        <p>Select your preferred doneness:</p>
+        
+        <div class="buttons">
+            <button onclick="startTimer(6)">
+                <img src="/images/softegg.jpg" alt="Soft Boiled Egg">
+                Soft (6 min)
+            </button>
+            <button onclick="startTimer(8)">
+                <img src="/images/mediumegg.jpg" alt="Medium Boiled Egg">
+                Medium (8 min)
+            </button>
+            <button onclick="startTimer(10)">
+                <img src="/images/hardegg.jpg" alt="Hard Boiled Egg">
+                Hard (10 min)
+            </button>
+        </div>
+
+        <div class="timer" id="timer">00:00</div>
+        <button id="clearButton" onclick="clearTimer()">Clear Timer</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
